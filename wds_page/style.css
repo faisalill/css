@@ -54,3 +54,60 @@ button{
     width: 2rem;
 
 }
+.curriculam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillGrid{
+    padding: 3rem;
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "html . node"
+    "vscode . database"
+    "edit . react";
+    gap: 1rem;
+}
+.html{
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+    grid-area: html;
+}
+.vscode{
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+    grid-area: vscode;
+}
+.edit{
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+    grid-area: edit;
+}
+.node{
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+    grid-area: node;
+}
+.database{
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+    grid-area: database;
+}
+.react{
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+    grid-area: react;
+}
+.curriculam_header{
+    padding: 1rem;
+}
