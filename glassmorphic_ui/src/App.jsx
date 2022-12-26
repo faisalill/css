@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import CharacterImage from './assets/character.png'
 import './App.css'
 const App = () => {
   const [DarkMode, setDarkMode] = useState(true)
@@ -17,8 +18,18 @@ const App = () => {
         <li className="menu">Menu</li>
       </ul>
     </div>
+    <div className="container">
+      <div className={DarkMode ? "text text-dark": "text text-light"}>
+        <h1>Glassmorphic UI</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad doloremque iure dolor eos. Est nostrum blanditiis laboriosam eius cum, numquam distinctio repudiandae velit tenetur ratione aliquid architecto ipsa ea quibusdam, enim molestias magnam assumenda?</p>
+        <span>Read More</span>
+      </div>
+      <div className={DarkMode ? "character character-dark" : "character character-light"}>
+        <img src={CharacterImage} className='characterImage' />
+      </div>
     </div>
     <button onClick={()=>{setDarkMode((val)=>!val)}}>Theme</button>
+    </div>
     </>
   )
 }
