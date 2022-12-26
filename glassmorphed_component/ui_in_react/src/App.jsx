@@ -1,14 +1,16 @@
 import React from 'react'
-import Button from './components/Button'
-import Navbar from './components/Navbar'
-
+import LightBg from './Components/LightBg'
+import DarkBg from './Components/DarkBg'
+import DarkHomePage from './Components/DarkHomePage'
+import LightHomePage from './Components/LightHomePage'
+import { useState } from 'react'
 const App = () => {
+  const [Theme, setTheme] = useState(true)
   return (
     <>
-    <h1>Navbar</h1>
-    <Navbar />
-    <h1>Buttons</h1>
-    <Button />
+    {Theme ? <DarkBg /> : <LightBg />}
+    {Theme ? <DarkHomePage /> : <LightHomePage />}
+    {/* <button onClick={()=>{setTheme((val)=>!val)}}>Toggle Theme</button> */}
     </>
   )
 }
