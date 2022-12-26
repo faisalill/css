@@ -1,0 +1,62 @@
+.navbar .logo{
+    color: rgba(255,255,255,0.9);
+    margin-left: 2.5rem;
+}
+.navbar a:hover .logo{
+ color: rgba(255,255,255,1);
+}
+.navbar{
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.2),
+    0rem 0rem 2rem rgba(0,0,0,0.4);
+    padding: 0.7rem 0.3rem;
+}
+.light-nav{
+    animation: light-nav-load 1.35s ease-in-out;
+
+}
+.dark-nav {
+    background-color: rgba(0,0,0,0.15);
+    animation: dark-nav-load 1.35s ease-in-out;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 0.9rem;
+    color: rgba(255,255,255,0.5);
+    font-family: 'Poppins';
+    font-weight: bold;
+    transition: 300ms;
+}
+.navbar ul li a:hover{
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+}
+.navbar ul{
+  display: flex;
+
+}
+@keyframes dark-nav-load{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+@keyframes light-nav-load{
+    0%{
+        transform: translateY(-100%);
+    }
+}

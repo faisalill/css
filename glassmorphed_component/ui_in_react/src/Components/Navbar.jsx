@@ -1,8 +1,10 @@
 import React from 'react'
 import {SiReactivex} from 'react-icons/si'
-const LightNavbar = () => {
+import { useSelector } from 'react-redux'
+const Navbar = () => {
+  const theme = useSelector((state)=>state.theme.value.LightTheme)
   return (
-    <div className="navbar light-nav">
+    <div className={theme? "navbar dark-nav" : "navbar light-nav"}>
         <a href="#"><SiReactivex size='30' className='logo'/></a>
         <ul>
             <li><a href="#">Home</a></li>
@@ -15,4 +17,4 @@ const LightNavbar = () => {
   )
 }
 
-export default LightNavbar
+export default Navbar
