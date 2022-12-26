@@ -6,6 +6,7 @@ import {useDispatch} from 'react-redux'
 import {changeTheme} from './features/Theme'
 import Navbar from './Components/Navbar'
 import './css/Navbar.css'
+import FirstContainer from './Components/FirstContainer'
 const App = () => {
   const dispatch = useDispatch()
   const theme = useSelector((state)=>state.theme.value.LightTheme)
@@ -13,7 +14,8 @@ const App = () => {
     <>
     {theme ? <DarkBg /> : <LightBg />}
     <Navbar />
-    <button onClick={()=>{dispatch(changeTheme())}}>Toggle Theme</button>
+    <FirstContainer />
+    <button  onClick={()=>{dispatch(changeTheme())}}>Toggle Theme</button>
     </>
   )
 }
