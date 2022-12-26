@@ -6,7 +6,6 @@ const App = () => {
   return (
     <>
     <div className={DarkMode ? "background-dark" : "background-light"}>
-    </div>
     <div className="page-container">
     <div className={DarkMode ? "navbar navbar-dark" : "navbar navbar-light"}>
       <h2>Logo</h2>
@@ -28,7 +27,8 @@ const App = () => {
         <img src={CharacterImage} className='characterImage' />
       </div>
     </div>
-    <button onClick={()=>{setDarkMode((val)=>!val)}}>Theme</button>
+    {/* <button onClick={()=>{setDarkMode((val)=>!val)}}>Theme</button> */}
+    </div>
     </div>
     </>
   )
