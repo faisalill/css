@@ -1,0 +1,71 @@
+.dark{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.7);
+}
+.light{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.7);
+}
+.LoginFormContainer{
+    backdrop-filter: blur(3px);
+}
+.LoginFormContainer h2{
+    text-align: center;
+    margin: 0.7rem;
+    color: rgba(255,255,255,0.8);
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container input{
+    border: none;
+    border-radius: 5rem;
+    padding: 0.8rem 1rem;
+    margin: 0.9rem 9rem;
+    
+    background-color: rgba(0,0,0,0.3);
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.7);
+}
+
+.form-container input::placeholder{
+    color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+.login-submit{
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    padding: 0.7rem 3rem;
+    margin-top: 0.5rem;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.3rem;
+    border-radius:1rem;
+    transition: 100ms ease-in-out;
+}
+.login-submit:hover{
+    background-color: rgba(255,255,255,0.3);
+    color: rgba(0,0,0,0.8);
+}
+.forgot{
+  margin-top: 1rem;
+  transition: 100ms ease-in-out;
+}
+.no-account{
+    transition: 100ms ease-in-out;
+}
+.forgot:hover{
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+}
+.no-account:hover{
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+}
