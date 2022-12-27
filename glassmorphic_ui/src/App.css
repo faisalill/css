@@ -107,13 +107,26 @@
   margin: 2rem 0rem;
   display: grid;
   grid-template-columns: 1fr 0.5fr 0.5fr  1fr;
-  grid-template-rows: 1fr 0.15fr 1fr;
+  grid-template-rows: 1fr 0.15fr 1fr 1fr;
   grid-template-areas: 
   "text text text character"
   "component-bar component-bar component-bar component-bar"
   "list list login login"
+  "clock clock calendar calendar"
   ;
   gap: 1rem;
+}
+.clock{
+    grid-area: clock;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.7);
+}
+.calendar{
+    grid-area: calendar;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.7);
 }
 .component-bar{
     margin: 1rem 0rem;

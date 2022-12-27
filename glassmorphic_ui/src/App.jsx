@@ -4,6 +4,8 @@ import Tilt from "react-tilt";
 import "./App.css";
 import ListTile from "./Component/ListTile";
 import LoginForm from "./Component/LoginForm";
+import Clock from "./Component/Clock";
+import Calendar from './Component/Calendar'
 const App = () => {
   const [DarkMode, setDarkMode] = useState(true);
   return (
@@ -60,6 +62,8 @@ const App = () => {
               <ListTile DarkMode={DarkMode}/>
             </div>
             <div className={DarkMode ? "login dark" : "login light"}><LoginForm /></div>
+            <div className="clock"><Clock /></div>
+            <div className="calendar"><Calendar /></div>
           </div>
           <div className="footer-container">
             <footer
